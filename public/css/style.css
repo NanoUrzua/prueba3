@@ -1,0 +1,77 @@
+body{
+    background-image:  url("https://image.freepik.com/vector-gratis/fondo-mosaico-cuadrados-morado_1164-1027.jpg")
+}
+
+.conf-logo{
+    width: 50%;
+    text-align: center;
+}
+
+.centrado-logo{
+    text-align: center;
+    padding-top: 5%;
+}
+
+.btn-centrado-iniciarSesion{
+    text-align: center;
+    padding-top: 5%;
+}
+
+.contenedor{
+    margin-top: 3%;
+    width: 80%;
+    background-color: rgb(221, 216, 221);
+    box-shadow:  0px 25px 50px rgba(0,0,0, 0.5);
+    padding-bottom: 3%;
+    margin-left: auto;
+    margin-right: auto;
+    border: solid rgb(0, 0, 0);
+    border-radius: 10px;
+
+ }
+
+ @media screen and (max-width: 1080px){
+    .contenedor{
+       margin-left: auto;
+       margin-right: auto;
+       width: 95%;
+       text-align: center;
+    }
+  }
+
+.contenedor-botones{
+    padding-top: 6%;
+}
+
+.contenedor-iniciarSesion{
+    padding-left: 25%;
+    padding-right: 25%;
+}
+
+.btn-posicion-iniciarSesion{
+    margin-top: 5%;
+}
+
+.combobox-conf-color{
+
+    padding: 5px;
+    width:100%;
+    outline: 0;
+    border: 2px solid rebeccapurple;
+    border-radius: 9px;
+    background: #ffffff;
+    color: #000000;
+}
+
+.tabla-posicion{
+    padding-top: 30px;
+}
+
+.alerta-sinPoleras{
+    text-align: center;
+    padding-top: 30px;
+}
+
+.btn-centrado-modificar_eliminar{
+    text-align: center;
+}
