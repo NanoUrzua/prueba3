@@ -15,7 +15,7 @@
     <div class="col-lg-12 centrado-logo">
         <h1 class="titulo-iniciarSesion">Bienvenido {{ $valor_almacenado = session('usuarioNombreActivo') }}</h1>
         <a href="{{ route('logout') }}" class="btn btn-secondary active" role="button" aria-pressed="true">Cerrar Sesión</a><br><br>
-            <h1 class="titulo-iniciarSesion">Eliminar POLERA</h1>
+            <h1 class="titulo-iniciarSesion">ELIMINAR POLERA</h1>
             @foreach( App\Http\Controllers\EnviarDatosController::mostrarDatosPolera($idPoleraEliminar) as $itemPolera )
                 <form class="contenedor-iniciarSesion" method="post" action="{{ route('deleteShirt', $itemPolera->skuPolera) }}">
                     @csrf
