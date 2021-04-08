@@ -39,7 +39,7 @@
                             </div>
 
                             <div class="col">
-                                <label>TALLA</label>
+                                <label>TALLlA</label>
                                 <input type="text" class="form-control" value="{{ $itemPolera->tallaPoleraAs }}" name="marca" id="marca" placeholder="Ingresar Marca..." minlength="1" maxlength="30" required readonly>
                             </div>
                         </div>
