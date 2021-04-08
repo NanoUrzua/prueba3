@@ -17,7 +17,7 @@
         <a href="{{ route('logout') }}" class="btn btn-secondary active" role="button" aria-pressed="true">Cerrar Sesión</a><br><br>
             <h1 class="titulo-iniciarSesion">MODIFICAR POLERA</h1>
             @foreach( App\Http\Controllers\EnviarDatosController::mostrarDatosPolera($idPoleraModificar) as $itemPolera )
-                <form class="contenedor-iniciarSesion" method="post" action="{{ route('updateShirt', $itemPolera->skuPolera) }}">
+                <form name="formModificarPolera" class="contenedor-iniciarSesion" method="post" action="{{ route('updateShirt', $itemPolera->skuPolera) }}">
                     @csrf
                     @method('PATCH')
                     @if(session('mensajeSuccess'))
@@ -30,26 +30,21 @@
                                 <label>SKU</label>
                                 <input type="text" class="form-control" name="sku" value="{{ $itemPolera->skuPolera }}" id="sku" placeholder="Ingresar SKU..." minlength="8" maxlength="8" required readonly>
                             </div>
-
                             <div class="col">
                                 <label>MARCA</label>
                                 <input type="text" class="form-control" value="{{ $itemPolera->marcaPolera }}" name="marca" id="marca" placeholder="Ingresar Marca..." minlength="1" maxlength="30"  required>
                             </div>
                         </div>
-
                         <div class="row">
                             <div class="col">
                                 <label>COLOR</label><br>
                                 <select class="form-control" name="cbxColor">
-                                    
                                     <option value="{{ $itemPolera->idColorAs }}" selected>{{ $itemPolera->colorPoleraAs }}</option>
-                                    
                                     @foreach( App\Http\Controllers\EnviarDatosController::rellenarComboBoxColor() as $itemColores )
                                         <option value="{{ $itemColores->idColor }}">{{ $itemColores->descripcion }}</option>
                                     @endforeach
                                 </select>
                             </div>
-
                             <div class="col">
                                 <label>TALLA</label>
                                 <select class="form-control" name="cbxTalla">
@@ -60,13 +55,11 @@
                                 </select>
                             </div>
                         </div>
-
                         <div class="row">
                             <div class="col">
                                 <label>PRECIO</label>
                                 <input type="number" class="form-control" value="{{ $itemPolera->precioPolera }}" name="precio" id="precio" min="1" max="9999999999" placeholder="Ingresar Precio..." required>
                             </div>
-
                             <div class="col">
                                 <label>STOCK</label>
                                 <input type="number" class="form-control" value="{{ $itemPolera->stockPolera }}" name="stock" id="stock" min="0" max="9999999999" placeholder="Ingresar Stock..." required>

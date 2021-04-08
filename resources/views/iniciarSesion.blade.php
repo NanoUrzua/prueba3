@@ -6,7 +6,7 @@
 <div class="row">
     <div class="col-lg-12 centrado-logo">
         <h1 class="titulo-iniciarSesion">Iniciar Sesión</h1>
-        <form class="contenedor-iniciarSesion" method="POST" action="{{route('loginUser')}}">
+        <form name="formIniciarSesion" class="contenedor-iniciarSesion" method="POST" action="{{route('loginUser')}}">
             @csrf
             @if(session('mensajeError'))
                 <div class="alert alert-danger">
