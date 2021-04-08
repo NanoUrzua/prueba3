@@ -72,7 +72,7 @@
                                 <input type="number" class="form-control" value="{{ $itemPolera->stockPolera }}" name="stock" id="stock" min="0" max="9999999999" placeholder="Ingresar Stock..." required>
                             </div>
                         </div>
-                        <button type="submit" class="btn btn-primary btn-lg  btn-posicion-iniciarSesion">Modificar Polera</button>
+                        <button type="submit" class="btn btn-primary btn-lg  btn-posicion-iniciarSesion">Modificarr Polera</button>
                         <a href="{{ route('crud') }}" class="btn btn-secondary btn-lg active btn-posicion-iniciarSesion" role="button" aria-pressed="true">Volver</a>
                 </form>
             @endforeach
