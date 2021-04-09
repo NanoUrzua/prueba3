@@ -22,5 +22,7 @@ Route::post('/iniciarSesion', 'EnviarDatosController@iniciarUsuario')->name('log
 Route::post('/', 'EnviarDatosController@agregarPolera')->name('insertShirt');
 Route::post('/modificarPolera', 'EnviarDatosController@obtenerIdParaModificar')->name('getIdUpdate');
 Route::post('/eliminarPolera', 'EnviarDatosController@obtenerIdParaEliminar')->name('getIdDelete');
+
 Route::patch('/modificarPolera/{id}', 'EnviarDatosController@modificarPolera')->name('updateShirt');
+
 Route::delete('/eliminarPolera/{id}', 'EnviarDatosController@eliminarPolera')->name('deleteShirt');
