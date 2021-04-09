@@ -55,11 +55,11 @@
                 <div class="row">
                     <div class="col">
                         <label>PRECIO</label>
-                        <input type="number" class="form-control" name="precio" id="precio" min="1" max="9999999999" placeholder="Ingresar Precio..." required>
+                        <input type="number" class="form-control" name="precio" id="precio" min="1" max="9999999" placeholder="Ingresar Precio..." required>
                     </div>
                     <div class="col">
                         <label>STOCK</label>
-                        <input type="number" class="form-control" name="stock" id="stock" min="0" max="9999999999" placeholder="Ingresar Stock..." required>
+                        <input type="number" class="form-control" name="stock" id="stock" min="0" max="9999999" placeholder="Ingresar Stock..." required>
                     </div>
                 </div>
                 <button type="submit" class="btn btn-primary btn-lg  btn-posicion-iniciarSesion">Agregar Polera</button>
